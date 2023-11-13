@@ -61,3 +61,19 @@ textarea:focus, input:focus, select:focus {
 *[placeholder] {
   color: #0E5AE5 !important;
 }
+
+.col-half {
+  position: relative;
+}
+
+input[data-testid="file"]::after {
+  content: attr(data-error);
+  position: absolute;
+  top: 92px;
+  left: 0;
+  color: #ea0606;
+  white-space: wrap;
+  font-size: .90rem;
+  line-height: 1rem;
+  pointer-events: none;
+}
