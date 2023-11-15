@@ -66,6 +66,8 @@ const mockedBills = {
     return Promise.resolve({fileUrl: 'https://localhost:3456/images/test.jpg', key: '1234'})
   },
   update(bill) {
+    if (bill) return Promise.resolve(bill)
+
     return Promise.resolve({
       "id": "47qAXb6fIm2zOKkLzMro",
       "vat": "80",
