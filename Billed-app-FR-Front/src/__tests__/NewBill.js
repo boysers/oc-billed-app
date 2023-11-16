@@ -130,7 +130,7 @@ describe("Given I am connected as an Employee", () => {
 				amount: 4000,
 				vat: "70",
 				percentage: 20,
-				commentary: "un nouveau pc pour jouer à star citizen",
+				commentary: "ok",
 			};
 
 			const selectElement = screen.getByTestId("expense-type");
